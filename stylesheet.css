@@ -1,0 +1,586 @@
+/*Default styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif, Arial;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 70%;
+}
+
+
+/*Default styles end*/
+
+
+/* Header home*/
+
+.section-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.home-back {
+    background-color: rgba(0, 0, 0, 0.4);
+    background: url(images/back-main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 700px;
+    background-attachment: fixed;
+}
+
+.home-back .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-color: #32383d;
+}
+
+.home-table {
+    width: 100%;
+    height: 100%;
+    display: table;
+    position: relative;
+    text-align: center;
+}
+
+.home-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+    z-index: 500;
+}
+
+.home-tablecell .row {
+    position: relative;
+    padding-top: 16.2rem;
+    padding-bottom: 15rem;
+}
+
+.row {
+    width: 94%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.main-heading {
+    letter-spacing: 0.1rem;
+    color: white;
+    border: 1px solid #f1f1f1;
+    border-radius: 25px;
+    text-shadow: 0 0.3rem 0.5rem darkgray;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+}
+
+.quote {
+    margin-top: 2rem;
+    letter-spacing: 0.2rem;
+    color: white;
+    text-shadow: 0 0.3rem 0.5rem gray;
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Black w/opacity/see-through */
+    border: 1px solid #f1f1f1;
+    border-radius: 25px;
+}
+
+
+/* Header home end*/
+
+
+/* Team*/
+
+.section-2 {
+    width: 100%;
+}
+
+.team-back {
+    width: 100%;
+    height: 100%;
+    background: rgb(176, 222, 211) url(images/webb.png);
+    min-height: 800px;
+    position: relative;
+}
+.team-back .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-color: #32383d;
+}
+
+
+
+.card {
+    position: relative;
+    width: 20rem;
+    perspective: 150rem;
+}
+
+.card-image {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 1rem;
+    background: center no-repeat;
+    background-size: contain;
+}
+
+.card h3 {
+    text-align: right;
+    font-size: 2rem;
+}
+
+.card h4 {
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+
+
+
+.front-side {
+    text-align: center;
+    border-radius: 0.3rem;
+    position: relative;
+    z-index: 10;
+    opacity: 1;
+    transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
+}
+
+.change > .front-side {
+    transform: translateZ(-5rem) translateX(1rem);
+    box-shadow: 0 2rem 4rem #777;
+    opacity: 0.3;
+    z-index: 0;
+}
+.back-side {
+    position: absolute;
+    top: 0;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 0.3rem;
+    
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-evenly;
+    
+    transform: translateZ(-5rem) translateX(1rem) ;
+    opacity: 0.5;
+    transition: opacity 0.4s, transform 0.4s, box-shadow 0.4s;
+    
+
+}
+
+.change > .back-side {
+    transform: translateZ(0) translateX(1rem)translateY(-1rem);
+    box-shadow: 0 0.5rem 2rem #aaa;
+    opacity: 0.9;
+}
+.link{
+    top: 50%;
+    position: relative;
+    
+    height: 40px;
+    width: 40px;
+}
+.card-text{
+    position: relative;
+    text-align: right;
+    
+}
+.switch-button{
+    position: absolute;
+    width: 6rem;
+    height: 3rem;
+    margin-top: 5px;
+    margin-left: 5px;
+    background: transparent;
+    border: 2px solid green groove;
+    cursor: pointer;
+    background: lightgreen;
+    color: rgb(255, 94, 0);
+    font-weight: bold;
+    font-size: medium;
+}
+
+
+/* Team end*/
+
+
+/*Responsive*/
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media (max-width: 599px) {
+    .col-xs-1,
+    .col-xs-2,
+    .col-xs-3,
+    .col-xs-4,
+    .col-xs-5,
+    .col-xs-6,
+    .col-xs-7,
+    .col-xs-8,
+    .col-xs-9,
+    .col-xs-10,
+    .col-xs-11,
+    .col-xs-12 {
+        float: left;
+    }
+    .col-xs-1 {
+        width: 8.33%;
+    }
+    .col-xs-2 {
+        width: 16.66%;
+    }
+    .col-xs-3 {
+        width: 25%;
+    }
+    .col-xs-4 {
+        width: 33.33%;
+    }
+    .col-xs-5 {
+        width: 41.66%;
+    }
+    .col-xs-6 {
+        width: 50%;
+    }
+    .col-xs-7 {
+        width: 58.33%;
+    }
+    .col-xs-8 {
+        width: 66.66%;
+    }
+    .col-xs-9 {
+        width: 74.99%;
+    }
+    .col-xs-10 {
+        width: 83.33%;
+    }
+    .col-xs-11 {
+        width: 91.66%;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+    .home-tablecell .row {
+        max-width: 600px;
+    }
+    .home-back {
+        max-height: 700px;
+    }
+    .main-heading {
+        font-size: 3rem;
+    }
+    .quote {
+        font-size: 1.3rem;
+    }
+    .section-2{
+        height: max-content;
+    }
+    
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .card{
+        width: 100%;
+        padding: 20px;
+    }
+    .card-image{
+        width: 100%;
+        height: 100%;
+    }
+    .back-side{
+        width: 90%;
+        height: 90%;
+    }
+    .link{
+        top: 50%;
+        position: relative;
+    }
+    
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media (min-width: 600px) {
+    .col-s-1,
+    .col-s-2,
+    .col-s-3,
+    .col-s-4,
+    .col-s-5,
+    .col-s-6,
+    .col-s-7,
+    .col-s-8,
+    .col-s-9,
+    .col-s-10,
+    .col-s-11,
+    .col-s-12 {
+        float: left;
+    }
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 74.99%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+    .main-heading {
+        font-size: 4rem;
+    }
+    .quote {
+        font-size: 2rem;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-items: center;
+        row-gap: 5px;
+        align-content: space-around;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .col-md-1,
+    .col-md-2,
+    .col-md-3,
+    .col-md-4,
+    .col-md-5,
+    .col-md-6,
+    .col-md-7,
+    .col-md-8,
+    .col-md-9,
+    .col-md-10,
+    .col-md-11,
+    .col-md-12 {
+        float: left;
+    }
+    .col-md-1 {
+        width: 8.33%;
+    }
+    .col-md-2 {
+        width: 16.66%;
+    }
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+        width: 33.33%;
+    }
+    .col-md-5 {
+        width: 41.66%;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-7 {
+        width: 58.33%;
+    }
+    .col-md-8 {
+        width: 66.66%;
+    }
+    .col-md-9 {
+        width: 74.99%;
+    }
+    .col-md-10 {
+        width: 83.33%;
+    }
+    .col-md-11 {
+        width: 91.66%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+    .main-heading {
+        font-size: 5rem;
+    }
+    .quote {
+        font-size: 3rem;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-items: center;
+        row-gap: 5px;
+        align-content: space-around;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12 {
+        float: left;
+    }
+    .col-lg-1 {
+        width: 8.33%;
+    }
+    .col-lg-2 {
+        width: 16.66%;
+    }
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-4 {
+        width: 33.33%;
+    }
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-8 {
+        width: 66.66%;
+    }
+    .col-lg-9 {
+        width: 74.99%;
+    }
+    .col-lg-10 {
+        width: 83.33%;
+    }
+    .col-lg-11 {
+        width: 91.66%;
+    }
+    .col-lg-12 {
+        width: 100%;
+    }
+    .main-heading {
+        font-size: 5.5rem;
+    }
+    .quote {
+        font-size: 3rem;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .col-xlg-1,
+    .col-xlg-2,
+    .col-xlg-3,
+    .col-xlg-4,
+    .col-xlg-5,
+    .col-xlg-6,
+    .col-xlg-7,
+    .col-xlg-8,
+    .col-xlg-9,
+    .col-xlg-10,
+    .col-xlg-11,
+    .col-xlg-12 {
+        float: left;
+    }
+    .col-xlg-1 {
+        width: 8.33%;
+    }
+    .col-xlg-2 {
+        width: 16.66%;
+    }
+    .col-xlg-3 {
+        width: 25%;
+    }
+    .col-xlg-4 {
+        width: 33.33%;
+    }
+    .col-xlg-5 {
+        width: 41.66%;
+    }
+    .col-xlg-6 {
+        width: 50%;
+    }
+    .col-xlg-7 {
+        width: 58.33%;
+    }
+    .col-xlg-8 {
+        width: 66.66%;
+    }
+    .col-xlg-9 {
+        width: 74.99%;
+    }
+    .col-xlg-10 {
+        width: 83.33%;
+    }
+    .col-xlg-11 {
+        width: 91.66%;
+    }
+    .col-xlg-12 {
+        width: 100%;
+    }
+    .main-heading {
+        font-size: 6rem;
+    }
+    .quote {
+        font-size: 3.5rem;
+    }
+}
